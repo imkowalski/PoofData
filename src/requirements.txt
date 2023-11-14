@@ -1,0 +1,5 @@
+flask
+gunicorn
+Flask-Limiter
+pil
+io
