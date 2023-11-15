@@ -11,7 +11,7 @@ app = Flask(__name__)
 limiter = Limiter(
     get_remote_address,
     app=app,
-    default_limits=["30 per minute"],
+    default_limits=["60 per minute"],
     storage_uri="memory://",
 )
 app.register_blueprint(api, url_prefix='/api')
