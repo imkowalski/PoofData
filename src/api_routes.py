@@ -1,6 +1,6 @@
 from flask import Blueprint, jsonify, request,send_file
 from gen_data import gen_images, gen_text, gen_obj, gen_bulk
-import time
+import time,random
 
 api = Blueprint('api', __name__)
 @api.route('/')
@@ -32,7 +32,7 @@ def gen_image():
 
 @api.route('/user/profile')
 def gen_profile():
-    seed = time.time()
+    seed = int(str(time.time())[-6:])+random.randint(-10000,10000)
     args = request.args
     if args.get('seed'):
         seed = int(request.args.get('seed'))

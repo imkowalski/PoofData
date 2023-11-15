@@ -4,5 +4,5 @@
 
 # /api/user/profile
 ````
-/api/user/profile?all
+/api/user/profile
 ````
