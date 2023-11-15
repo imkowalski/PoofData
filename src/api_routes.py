@@ -8,6 +8,7 @@ def index():
     return jsonify({'message': "I'm the Poof API", 'status': 200})
 
 
+
 @api.route('/image/gen_identicon/<int:id>')
 def gen_identicon(id):
     if request.args.get('size'):

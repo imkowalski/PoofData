@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, redirect
 from flask_limiter import Limiter 
 from flask_limiter.util import get_remote_address
 
@@ -31,3 +31,6 @@ def info():
     return jsonify({'title': 'About The API','message':"This is an API that generetes fake/dummy data for frontend developers to test their app", 'status': 200}), 200
 
 
+@app.route('/docs')
+def redirect_docs():
+    return redirect("https://imkowalski.github.io/PoofData/", code=302)
