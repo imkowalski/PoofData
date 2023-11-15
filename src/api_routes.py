@@ -31,12 +31,10 @@ def gen_image():
 
 @api.route('/user/profile')
 def gen_profile():
-    seed = None
+    seed = time.time()
     args = request.args
     if args.get('seed'):
         seed = int(request.args.get('seed'))
-    else:
-        seed = time.time()
     
     res = {}
     for i in args.keys():
@@ -64,7 +62,7 @@ def gen_post():
     if request.args.get('seed'):
         seed = int(request.args.get('seed'))
     post = gen_obj.gen_post(seed)
-    return jsonify(post)
+    return jsonify(post),200
     
 
 @api.route('/object/comment')
@@ -73,26 +71,26 @@ def gen_comment():
     if request.args.get('seed'):
         seed = int(request.args.get('seed'))
     comment = gen_obj.gen_comment(seed)
-    return jsonify(comment)
+    return jsonify(comment),200
 
 
 @api.route('/bulk/posts/<int:num>')
 def gen_posts(num=1):
     posts = gen_bulk.gen_posts(num)
-    return jsonify(posts)
+    return jsonify(posts),200
 
 
 @api.route('/bulk/comments/<int:num>')
 def gen_comments(num=1):
     comments = gen_bulk.gen_comments(num)
-    return jsonify(comments)
+    return jsonify(comments),200
 
 @api.route('/bulk/profiles/<int:num>')
 def gen_profiles(num=1):
     profiles = gen_bulk.gen_profiles(num)
-    return jsonify(profiles)
+    return jsonify(profiles),200
 
 @api.route('/bulk/images/<int:num>')
 def gen_images_list(num=1):
     images = gen_bulk.gen_images_list(num)
-    return jsonify(images)
+    return jsonify(images),200

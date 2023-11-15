@@ -68,4 +68,4 @@ def gen_profile(seed):
     phone = gen_phone(seed)
     job = gen_job(seed)
     company = gen_company(seed)
-    return {"name":name,"email":email,"phone":phone,"job":job,"company":company,"id":int(str(seed)[-7:])+random.randint(-10000,10000)}
+    return {"name":name,"email":email,"phone":phone,"job":job,"company":company,"id":int(str(seed)[-6:])+random.randint(-10000,10000)}

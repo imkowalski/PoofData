@@ -22,5 +22,5 @@ def gen_profiles(num):
 def gen_images_list(num):
     images = []
     for i in range(0,num):
-        images.append({"image":"/image/gen_image?width=512&height=512","id": int(str(time.time())[-7:])+i})
+        images.append({"image":"/image/gen_image?width=512&height=512","id": int(str(time.time())[-6:])+i})
     return images
