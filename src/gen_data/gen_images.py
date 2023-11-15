@@ -1,4 +1,4 @@
-from PIL import Image
+from PIL import Image, ImageDraw
 import random
 from io import BytesIO
 
@@ -24,4 +24,16 @@ def gen_identicon(id,resolution=10, size=256):
     img.save(temp_img, 'jpeg', quality=50)
     temp_img.seek(0)
     
+    return temp_img
+
+def gen_image(width,heigt):
+    img = Image.new('RGB', (width, heigt),color=(100,0,0))
+    draw = ImageDraw.Draw(img)  
+    draw.text((5, 5), str(width)+" X  "+str(heigt), align ="left")  
+    
+    img.show()
+    
+    temp_img = BytesIO()
+    img.save(temp_img, 'jpeg', quality=50)
+    temp_img.seek(0)
     return temp_img
