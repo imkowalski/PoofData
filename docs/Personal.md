@@ -1,6 +1,4 @@
-| [Personal Information Endpoints](./Personal.md)  | [Image Endpoints](./Images.md)  | [Bulk Data Endpoints](./Bulk.md) | [Object Endpoints](./Objekt.md)  | [How To Selfhost?](./selfhost.md) | [Github Repo](https://github.com/imkowalski/PoofData) |
-
-<br><br><br>
+| [Profile Endpoints](./Personal.md)  | [Image Endpoints](./Images.md)  | [Bulk Data Endpoints](./Bulk.md) | [Object Endpoints](./Object.md)  | [Selfhost](./Selfhost.md) | [Github Repo](https://github.com/imkowalski/PoofData) | [About](./About.md) |
 
 ![img](./img/PoofData.png)
 
@@ -21,9 +19,9 @@ by deafult this will return a a JSON object with a random person profile informa
 ````
 If you want to get the same person you can use URL-parameters to set specific seed like this:
 ````
-/api/user/profile?seed=1
+/api/user/profile?seed=<int>
 ````
-This will allways yield the same output, in that case the seedwill be used as the id, that will look like this:
+This will allways yield the same output, in the case of the int being a 1, the output would always look like this:
 ````json
 {
   "company": "Bath Media",
@@ -54,3 +52,8 @@ this would yield this result:
 }
 ````
 The order of the parameters doesn't matter
+
+
+_____
+Made by [Michal Kowalski](https://github.com/imkowalski)
+Licensed under the [MIT license](https://opensource.org/license/mit/)

@@ -11,7 +11,7 @@ def gen_comment(seed):
     return {
         "text": text,
         "id": int(str(seed)[-6:]),
-        "author": random.randint(1,1000),
+        "author_id": random.randint(1,1000),
         "likes": random.randint(1,1000),
         "dislikes": random.randint(1,1000),
         "date": time.time(),
@@ -29,7 +29,7 @@ def gen_post(seed):
     return {
         "text": text,
         "id": int(str(seed)[-6:]),
-        "author": random.randint(1,1000),
+        "author_id": random.randint(1,1000),
         "likes": random.randint(1,1000),
         "dislikes": random.randint(1,1000),
         "date": time.time(),

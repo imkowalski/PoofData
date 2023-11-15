@@ -1,3 +1,8 @@
-| [Personal Information Endpoints](./Personal.md)  | [Image Endpoints](./Images.md)  | [Bulk Data Endpoints](./Bulk.md) | [Object Endpoints](./Objekt.md)  | [How To Selfhost?](./selfhost.md) | [Github Repo](https://github.com/imkowalski/PoofData) |<br><br><br>
+| [Profile Endpoints](./Personal.md)  | [Image Endpoints](./Images.md)  | [Bulk Data Endpoints](./Bulk.md) | [Object Endpoints](./Object.md)  | [Selfhost](./Selfhost.md) | [Github Repo](https://github.com/imkowalski/PoofData) | [About](./About.md) |
 
 ![img](./img/PoofData.png)
+
+
+_____
+Made by [Michal Kowalski](https://github.com/imkowalski)
+Licensed under the [MIT license](https://opensource.org/license/mit/)
