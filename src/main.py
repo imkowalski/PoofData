@@ -24,6 +24,6 @@ def index():
 @app.route('/info')
 @limiter.exempt
 def info():
-    return jsonify({'title': 'About The API','message':"asd", 'status': 200})
+    return jsonify({'title': 'About The API','message':"This is an API that generetes fake/dummy data for frontend developers to test their app", 'status': 200})
 
 
