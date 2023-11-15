@@ -44,7 +44,7 @@ def gen_profile():
         if i == "name":
             res["name"] = gen_text.gen_name(seed)[0]+" "+gen_text.gen_name(seed)[1]
         if i == "email":
-            res["email"] = gen_text.gen_email(seed,res["name"][0])
+            res["email"] = gen_text.gen_email(seed,gen_text.gen_name(seed)[0])
         if i == "phone":
             res["phone"] = gen_text.gen_phone(seed)
         if i == "job":
