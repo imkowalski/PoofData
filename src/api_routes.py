@@ -42,7 +42,7 @@ def gen_profile():
         if i == "seed":
             continue;
         if i == "name":
-            res["name"] = gen_text.gen_name(seed)
+            res["name"] = gen_text.gen_name(seed)[0]+" "+gen_text.gen_name(seed)[1]
         if i == "email":
             res["email"] = gen_text.gen_email(seed,res["name"][0])
         if i == "phone":
