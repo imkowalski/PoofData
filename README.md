@@ -25,16 +25,21 @@ and you should get a response that looks like this
 ````
 # Endpoints
 Here is a list of all endpoints with a link to see the possible arguments for the diffrent endpoints
-- [/api/image/gen_identicon/]()
-- [/api/image/gen_image]()
+- [/api/image/gen_identicon/](https://imkowalski.github.io/PoofData/Images#apiimagegen_identicon)
+- [/api/image/gen_image](https://imkowalski.github.io/PoofData/Images#apiimagegen_image)
 - [/api/user/profile](https://imkowalski.github.io/PoofData/Personal#apiuserprofile)
 - [/api/object/comment](https://imkowalski.github.io/PoofData/Object#apiobjectcomment)
 - [/api/object/post](https://imkowalski.github.io/PoofData/Object#apiobjectpost)
-- [/api/bulk/posts/]()
-- [/api/bulk/profiles/]()
-- [/api/bulk/images/]()
+- [/api/bulk/posts/](https://imkowalski.github.io/PoofData/Bulk#apibulkposts)
+- [/api/bulk/profiles/](https://imkowalski.github.io/PoofData/Bulk#apibulkprofiles)
+- [/api/bulk/images/](https://imkowalski.github.io/PoofData/Bulk#apibulkimages)
 
-
+# Known Errors
+- there is an error with bulk where the ids make the api endpoints fail. the error code is: ````File "/var/task/gen_data/gen_bulk.py", line 7, in gen_posts
+posts.append(gen_obj.gen_post(time.time()+i))
+File "/var/task/gen_data/gen_obj.py", line 31, in gen_post
+"id": int(str(seed)[-6:]),
+ValueError: invalid literal for int() with base 10: '.39185'````
 _____
 Made by [Michal Kowalski](https://github.com/imkowalski)
 Licensed under the [MIT license](https://opensource.org/license/mit/)
