@@ -94,4 +94,4 @@ For example if the seed int was a 1, the output would always be
 ````
 _____
 Made by [Michal Kowalski](https://github.com/imkowalski)
-Licensed under the [MIT license](https://opensource.org/license/mit/)
+Licensed under the [GNU AGPLv3](https://github.com/imkowalski/PoofData/blob/main/LICENSE)
