@@ -42,6 +42,8 @@ posts.append(gen_obj.gen_post(time.time()+i))
 File "/var/task/gen_data/gen_obj.py", line 31, in gen_post
 "id": int(str(seed)[-6:]),
 ValueError: invalid literal for int() with base 10: '.39185'````
+
+
 _____
 Made by [Michal Kowalski](https://github.com/imkowalski)
 Licensed under the [MIT license](https://opensource.org/license/mit/)
