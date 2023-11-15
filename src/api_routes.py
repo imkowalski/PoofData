@@ -41,9 +41,6 @@ def gen_profile():
     for i in args.keys():
         if i == "seed":
             continue;
-        if i == "all":
-            res = gen_text.gen_profile(seed)
-            break;
         if i == "name":
             res["name"] = gen_text.gen_name(seed)
         if i == "email":
@@ -54,6 +51,8 @@ def gen_profile():
             res["job"] = gen_text.gen_job(seed)
         if i == "id":
             res["id"] = seed
+    if res == {}:
+        res = gen_text.gen_profile(seed)
     return jsonify(res)
 
 

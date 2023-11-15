@@ -1,14 +1,17 @@
-| [Personal Information Endpoints](./Personal.md)  | [Image Endpoints](./Images.md)  | [Bulk Data Endpoints](./Bulk.md) | [Object Endpoints](./Objekt.md)  | [How To selfhost?](./selfhost.md)  |
+| [Personal Information Endpoints](./Personal.md)  | [Image Endpoints](./Images.md)  | [Bulk Data Endpoints](./Bulk.md) | [Object Endpoints](./Objekt.md)  | [How To Selfhost?](./selfhost.md) | [Github Repo](https://github.com/imkowalski/PoofData) |<br><br><br>
+
 ![img](./img/PoofData.png)
+
 > A simple API, made for frontend developers to test and help develop ther UI/UX designs, by providing them dummy/placeholder data
 <br>
-# Quick start
-This is a free API so you don't need any API key, to use the API. But there is a rate limit of 1 call per second.
 
-The link for the API is:
+# Quick start
+
+You can either selfhost the project, or use the link for the API is:
 ````
 https://poofdata-1-e0595391.deta.app
 ````  
+This link is free to use, but there is a rate limit of 1 call per second, if you want to bypass this you should selfhost the project, to learn how to you can read more about it [her](./selfhost.md).
 
 To get going you test if the api works by pinging /api/
 ````
@@ -21,25 +24,19 @@ and you should get a response that looks like this
   "status": 200
 }
 ````
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# Endpoints
+Here is a list of all endpoints with a link to see the possible arguments for the diffrent endpoints
+- [/api/image/gen_identicon/]()
+- [/api/image/gen_image]()
+- [/api/user/profile]()
+- [/api/object/comment]()
+- [/api/object/post]()
+- [/api/bulk/posts/]()
+- [/api/bulk/profiles/]()
+- [/api/bulk/images/]()
 
 
 _____
+Made by [Michal Kowalski](https://github.com/imkowalski)
 Licensed under the [MIT license](https://opensource.org/license/mit/)
 
