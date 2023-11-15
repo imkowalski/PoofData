@@ -26,7 +26,7 @@ and you should get a response that looks like this
 Here is a list of all endpoints with a link to see the possible arguments for the diffrent endpoints
 - [/api/image/gen_identicon/]()
 - [/api/image/gen_image]()
-- [/api/user/profile]()
+- [/api/user/profile](https://imkowalski.github.io/PoofData/Personal.html#apiuserprofile)
 - [/api/object/comment]()
 - [/api/object/post]()
 - [/api/bulk/posts/]()

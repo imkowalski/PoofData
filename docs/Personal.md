@@ -1,4 +1,6 @@
-| [Personal Information Endpoints](./Personal.md)  | [Image Endpoints](./Images.md)  | [Bulk Data Endpoints](./Bulk.md) | [Object Endpoints](./Objekt.md)  | [How To Selfhost?](./selfhost.md) | [Github Repo](https://github.com/imkowalski/PoofData) |<br><br><br>
+| [Personal Information Endpoints](./Personal.md)  | [Image Endpoints](./Images.md)  | [Bulk Data Endpoints](./Bulk.md) | [Object Endpoints](./Objekt.md)  | [How To Selfhost?](./selfhost.md) | [Github Repo](https://github.com/imkowalski/PoofData) |
+
+<br><br><br>
 
 ![img](./img/PoofData.png)
 
@@ -17,11 +19,11 @@ by deafult this will return a a JSON object with a random person profile informa
   "phone": "62302978"
 }
 ````
-If you want to get the same person you can use URL parameters to set s specific seed like this:
+If you want to get the same person you can use URL-parameters to set specific seed like this:
 ````
 /api/user/profile?seed=1
 ````
-This will allways yield the same output, that will look like this:
+This will allways yield the same output, in that case the seedwill be used as the id, that will look like this:
 ````json
 {
   "company": "Bath Media",
@@ -32,3 +34,23 @@ This will allways yield the same output, that will look like this:
   "phone": "29141777"
 }
 ````
+If you only want some specific fields from this endpoints you can use URL-parameters to specify which parameters you want to get. The availible parameters are:
+- company
+- email
+- id 
+- job
+- name
+- phone
+
+these can of course be chained. If you for an example weanted to only get the name and email of person with the id 6 you could write
+````
+/api/user/profile?email&name&seed=6
+````
+this would yield this result:
+````json
+{
+  "email": "capri@poofdata.com",
+  "name": "Capri Boone"
+}
+````
+The order of the parameters doesn't matter
