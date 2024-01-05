@@ -50,9 +50,3 @@ python3 dev.py
 _____
 Made by [Michal Kowalski](https://github.com/imkowalski)
 Licensed under the [GNU AGPLv3](https://github.com/imkowalski/PoofData/blob/main/LICENSE)
-
-
-
-_____
-Made by [Michal Kowalski](https://github.com/imkowalski)
-Licensed under the [GNU AGPLv3](https://github.com/imkowalski/PoofData/blob/main/LICENSE)
