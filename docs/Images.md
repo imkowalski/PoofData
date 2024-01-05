@@ -1,4 +1,4 @@
-| [Profile Endpoints](./Personal.md)  | [Image Endpoints](./Images.md)  | [Bulk Data Endpoints](./Bulk.md) | [Object Endpoints](./Object.md)  | [Selfhost](./Selfhost.md) | [Github Repo](https://github.com/imkowalski/PoofData) | [About](./About.md) |
+| [Profile Endpoints](./Personal.md)  | [Image Endpoints](./Images.md)  | [Bulk Data Endpoints](./Bulk.md) | [Object Endpoints](./Object.md)  | [Selfhost](./Selfhost.md) | [Github Repo](https://github.com/imkowalski/PoofData) |
 
 ![img](./img/PoofData.png)
 
@@ -19,7 +19,7 @@ Of course in some cases maybe you would need a specific size of an icon in that 
 ````
 /api/image/gen_image?width=<int>&height=<int>
 ````
-This returns a example image, it will always yield the same image with no variation, for example if these paramters are passed:
+This returns a simple one color image, it will always yield the same image with no variation, for example if these paramters are passed:
 ````
 /api/image/gen_image?width=800&height=400
 ````

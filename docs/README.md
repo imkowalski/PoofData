@@ -1,4 +1,4 @@
-| [Profile Endpoints](./Personal.md)  | [Image Endpoints](./Images.md)  | [Bulk Data Endpoints](./Bulk.md) | [Object Endpoints](./Object.md)  | [Selfhost](./Selfhost.md) | [Github Repo](https://github.com/imkowalski/PoofData) | [About](./About.md) |
+| [Profile Endpoints](./Personal.md)  | [Image Endpoints](./Images.md)  | [Bulk Data Endpoints](./Bulk.md) | [Object Endpoints](./Object.md)  | [Selfhost](./Selfhost.md) | [Github Repo](https://github.com/imkowalski/PoofData) |
 
 ![img](./img/PoofData.png)
 
@@ -11,7 +11,7 @@ You can either selfhost the project, or use the link for the API is:
 ````
 https://poofdata-1-e0595391.deta.app
 ````  
-This link is free to use, but there is a rate limit of 1 call per second, if you want to bypass this you should selfhost the project, to learn how to you can read more about it [her](./selfhost.md).
+This link is free to use, but there is a rate limit of 1 call per second, if you want to bypass this you should selfhost the project, to learn how to you can read more about it [her](./Selfhost.md).
 
 To get going you test if the api works by pinging /api/
 ````
