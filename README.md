@@ -8,13 +8,13 @@ You can find the full documentaion at [imkowalski.github.io/PoofData/](https://i
 
 You can either selfhost the project, or use the link for the API is:
 ````
-https://poofdata.kowal.dk
+https://poofdata.whs.dk
 ````  
 This link is free to use, but there is a rate limit of 1 call per second, if you want to bypass this you should selfhost the project, to learn how to you can read more about it [her](./docs/Selfhost.md).
 
 To get going you test if the api works by pinging /api/
 ````
-https://poofdata.kowal.dk/api/
+https://poofdata.whs.dk/api/
 ```` 
 and you should get a response that looks like this
 ````json
